@@ -1,0 +1,29 @@
+1. Final Objects vs immutable objects?
+Final : Statechange can be possible
+Immutable : Statechange can't be possible
+
+2. Immutable objects are objects whose state (i.e., data) cannot be modified after they are created.No Inheritance.
+What are the different ways we can change the state of an object?
+i. Using constructor,ii. Using Setter method, iii. Using Getter methods
+3. State Can't be changed: Immutable objects have a fixed state that cannot be modified after creation.
+All fields within the object are final or
+effectively final (i.e., they are initialized only once during object construction).
+4. Examples of immutable objects in Java include:
+String: Once created, the contents of a String object cannot be modified.
+Integer, Long, Double, and other wrapper classes for primitive types.
+LocalDate, LocalTime, LocalDateTime, and other classes in the java.time package.
+BigInteger and BigDecimal for arbitrary-precision arithmetic.
+Enums: Enum constants are implicitly immutable.
+5. How to create our own Immutable objects:
+
+To create immutable objects in Java, follow these guidelines:
+
+Make all fields private and final.
+Do not provide setter methods. Instead, initialize the fields via constructor parameters.
+Ensure that any methods that return mutable objects (e.g., arrays, collections)
+ defensively copy the internal state to prevent modification by external code.
+
+
+ 6. By defensively copying the internal state before returning it, you ensure that the original mutable object remains
+ unchanged even if the returned object is modified by the caller. This helps to prevent unintended modifications
+ and maintain encapsulation and immutability guarantees.

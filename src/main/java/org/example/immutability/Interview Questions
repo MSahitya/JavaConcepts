@@ -1,0 +1,30 @@
+
+
+1. Can an immutable object have mutable fields? Explain your reasoning.
+yes, we can have multiple fields as instance variables
+
+2. What are the advantages and disadvantages of using immutable objects in a multi-threaded environment?
+   Advantages:
+   i. Thread Safe
+   ii. Simplified Concurrency: avoid data race conditions,data races
+   iii. Predictable Behaviour
+   iv. Sharing without copying
+   v. Cacheability: Immutable objects are inherently cacheable, as their state cannot change over time. This makes them suitable for caching mechanisms in multi-threaded applications, improving performance and reducing resource contention.
+  Disdvantages:
+  i. Memory Overhead: ii. Object Creation Overhead iii. Limited Flexibility iv.complexity in Updates v.Garbage Collection overhead
+3. How would you implement an immutable class that represents a complex data structure, such as a binary tree or graph?
+
+4. Is it possible for two distinct immutable objects to be considered equal according to the equals() method? If so, under what circumstances?
+
+5. Can you provide an example of a scenario where making an object immutable would be detrimental to performance or memory usage?
+
+6. Explain the concept of "effective immutability" and how it differs from strict immutability.
+
+7. How can you ensure the immutability of an object passed as an argument to a method, especially if the method's implementation may modify the object's state?
+
+8. Discuss the relationship between immutability and serialization. How does serialization impact the immutability of objects?
+
+9. In what scenarios would you choose to make a class mutable instead of immutable, despite the advantages of immutability?
+
+10. Explain the potential pitfalls of relying on immutability for security purposes, such as preventing object tampering or injection attacks.
+
