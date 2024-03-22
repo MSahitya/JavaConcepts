@@ -15,9 +15,9 @@ yes, we can have multiple fields as instance variables
 3. How would you implement an immutable class that represents a complex data structure, such as a binary tree or graph?
 
 4. Is it possible for two distinct immutable objects to be considered equal according to the equals() method? If so, under what circumstances?
-
+objects may be considered equal if they have the same values for all their fields.
 5. Can you provide an example of a scenario where making an object immutable would be detrimental to performance or memory usage?
-
+One such scenario is when dealing with large, frequently changing data structures, where creating new instances of immutable objects to represent changes can lead to increased memory usage and decreased performance due to object creation overhead
 6. Explain the concept of "effective immutability" and how it differs from strict immutability.
 
 7. How can you ensure the immutability of an object passed as an argument to a method, especially if the method's implementation may modify the object's state?
