@@ -1,0 +1,32 @@
+1. Object cloning in Java refers to the method of creating an object from an existing object, resulting in a replica (or copy).
+2. CLONE() METHOD
+   This method belongs to the Object class, which is a base class of every class created in Java. This method helps to create a copy of the object, but if the class doesn’t support a cloneable interface then it leads to the exception, " CloneNotSupportedException".
+   The syntax for the clone method is:
+   protected Object clone() throws CloneNotSupportedException
+
+3. Advantages of Object Cloning:
+We don’t need to write repetitive codes. The clone() method will perform the same task while writing far fewer lines of code.
+Clone() helps to copy an array quickly.
+Cloning is the most efficient/easiest way for copying objects.
+
+4. DISADVANTAGES OF OBJECT CLONING
+The method clone() is protected, which is defined in Object class. So, we will have to define our own method.
+The clone() method doesn’t call any constructor so there will be no control on object creation.
+We need to implement the clone() method in a class whose object has to be cloned, we also need to
+ handle CloneNotSupportedException and calling of the clone() method.
+
+ 5.Default java cloning:
+ In Java the default cloning is “field by field copy”.
+ So when JVM is called to perform object cloning there will be two cases:
+ If the source object has the primitive data members, then a new object will be created with different references and
+ will be returned.
+ If our source object has member objects of other classes, then only the object references will be copied to the new object because the object class, which is the base class of every class, will not have the idea of class structure of the member object.
+
+6. WAYS TO CREATE A REPLICA OF OBJECT
+   We can create a copy of an object using copy constructor and object cloning.
+
+7. Ways of Cloning: Shallow and Deep
+When we create a shallow copy, object and all the primitive variable and object references will also get copied, but if there are some object references then the same would be copied to a new object. No new copy of reference object will be created. It is generally faster than deep copy as no reference object contained by the source object will be copied. Any change made to references contained by the target object will get reflected in references that are contained by the source object. It is the default cloning method.
+
+8.DEEP COPY
+  During deep copy we create the copy of the source object. But, unlike shallow copy, if the source objects contain and reference objects then copies of those objects will also get created with the help of clone() method. It will make both the source and target object independent of each other. If we make any change to either object it will not get reflected to another object.
