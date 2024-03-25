@@ -1,0 +1,64 @@
+1.What are Wrapper Classes.
+object representation of primitive data types
+Classes that encapsulate primitive data types within an Object.
+We need when
+i. Working with Collections
+ii. Passing method arguments where it expects Class object.
+Integer - Wraps an int value.
+Double - Wraps a double value.
+Boolean - Wraps a boolean value.
+Character - Wraps a char value.
+Byte - Wraps a byte value.
+Short - Wraps a short value.
+Long - Wraps a long value.
+Float - Wraps a float value.
+
+Wrapper classes provide methods to manipulate, convert, and access the wrapped primitive value.
+ They also provide constants, such as MIN_VALUE and MAX_VALUE, which represent the
+  minimum and maximum values that can be stored by the primitive type.
+
+
+
+  2.What is Autoboxing?
+  Autoboxing is a feature in Java (and some other programming languages) that allows automatic conversion of primitive data
+  types into their corresponding wrapper objects, and vice versa,
+
+  3. What is Typecasting?
+  The conversion from an object of a subclass to an object of its superclass is called upcasting.
+   In object-oriented programming, upcasting is a type of implicit conversion where an object of a subclass can
+   be treated as an object of its superclass. This conversion happens automatically without the need for explicit casting.
+
+   4. COnstant Pools
+   String Constant Pool: The String pool is a special area in the Java heap memory that stores unique string literals.
+           When you create a string using string literals (e.g., String str = "hello";), Java checks if the string already exists in the pool. If it does, it returns the reference to the existing string, otherwise, it creates a new string in the pool.
+           String pool helps in conserving memory by avoiding duplicate string objects with the same content.
+
+     Integer Cache: Java caches integer objects in the range of -128 to 127 (inclusive) to optimize memory usage.
+                    When you use autoboxing for integer values within this range (e.g., Integer i = 5;), Java reuses existing Integer objects from the cache instead of creating new ones.
+                    This caching mechanism reduces memory consumption by avoiding the creation of multiple Integer objects for frequently used integer values.
+
+   Long Cache (Java 9 onwards):
+
+   Similar to the Integer cache, Java 9 introduced a Long cache for values between -128 to 127 (inclusive).
+   Long values within this range are cached to improve performance and memory usage when autoboxing.
+
+   Other Caches:
+
+   Other types of caching may exist in Java libraries or frameworks for specific purposes, such as caching frequently accessed objects or data to improve performance.
+   For example, some libraries may provide caches for database query results, HTTP responses, or computed values to avoid redundant computations or I/O operations.
+
+
+
+   5. int vs BigInteger
+   int:
+
+   int is a primitive data type in Java used to represent 32-bit signed integers.
+   Its range is from -2,147,483,648 to 2,147,483,647.
+   Arithmetic operations involving int are fast and efficient because they are directly supported by the hardware.BigInteger:
+
+   BigInteger is a class in the java.math package that represents arbitrary-precision integers.
+  It can represent integers of any size, limited only by the amount of memory available to the program.
+ BigInteger is useful when dealing with extremely large integers that exceed the range of int.
+  Arithmetic operations involving BigInteger are slower compared to int because they involve software-based algorithms to handle arbitrarily large numbers.
+   When to use int or BigInteger:  Use int when you are sure that the values you are dealing with will fit within the range of a 32-bit signed integer (-2,147,483,648 to 2,147,483,647). int is more efficient in terms of memory and performance for smaller integer values.
+ Use BigInteger when you need to work with very large integers or when you need to guarantee that your calculations won't overflow or underflow, regardless of the size of the numbers involved. BigInteger is suitable for scenarios where precision and range matter more than performance, such as cryptography or large numerical computations.
