@@ -1,0 +1,164 @@
+{
+  "employees": [
+    {
+      "name": "Alice Johnson",
+      "phone": "555-123-4567",
+      "email": "alice.johnson@example.com",
+      "address": {
+        "houseNumber": "123 Main St",
+        "city": "Springfield",
+        "zipCode": "12345",
+        "country": "USA"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1990-05-15",
+        "nationality": "American",
+        "maritalStatus": "Single"
+      }
+    },
+    {
+      "name": "Bob Smith",
+      "phone": "555-987-6543",
+      "email": "bob.smith@example.com",
+      "address": {
+        "houseNumber": "456 Oak Ave",
+        "city": "Riverside",
+        "zipCode": "67890",
+        "country": "Canada"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1985-11-22",
+        "nationality": "Canadian",
+        "maritalStatus": "Married"
+      }
+    },
+    {
+      "name": "Charlie Brown",
+      "phone": "555-111-2222",
+      "email": "charlie.brown@example.com",
+      "address": {
+        "houseNumber": "789 Pine Ln",
+        "city": "Hilldale",
+        "zipCode": "54321",
+        "country": "UK"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1993-08-01",
+        "nationality": "British",
+        "maritalStatus": "Divorced"
+      }
+    },
+    {
+      "name": "David Lee",
+      "phone": "555-333-4444",
+      "email": "david.lee@example.com",
+      "address": {
+        "houseNumber": "101 Elm Rd",
+        "city": "Lakeside",
+        "zipCode": "98765",
+        "country": "Australia"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1988-03-10",
+        "nationality": "Australian",
+        "maritalStatus": "Single"
+      }
+    },
+    {
+      "name": "Eva Garcia",
+      "phone": "555-555-6666",
+      "email": "eva.garcia@example.com",
+      "address": {
+        "houseNumber": "222 Birch Ct",
+        "city": "Mountainview",
+        "zipCode": "13579",
+        "country": "Spain"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1995-12-28",
+        "nationality": "Spanish",
+        "maritalStatus": "Married"
+      }
+    },
+    {
+      "name": "Frank Miller",
+      "phone": "555-777-8888",
+      "email": "frank.miller@example.com",
+      "address": {
+        "houseNumber": "333 Cedar Ave",
+        "city": "Oceanville",
+        "zipCode": "24680",
+        "country": "France"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1982-07-05",
+        "nationality": "French",
+        "maritalStatus": "Single"
+      }
+    },
+    {
+      "name": "Grace Wilson",
+      "phone": "555-999-0000",
+      "email": "grace.wilson@example.com",
+      "address": {
+        "houseNumber": "444 Maple Dr",
+        "city": "Valleytown",
+        "zipCode": "86420",
+        "country": "Germany"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1998-02-18",
+        "nationality": "German",
+        "maritalStatus": "Married"
+      }
+    },
+    {
+      "name": "Henry Moore",
+      "phone": "555-222-3333",
+      "email": "henry.moore@example.com",
+      "address": {
+        "houseNumber": "555 Willow Ln",
+        "city": "Forestcity",
+        "zipCode": "02468",
+        "country": "Italy"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1979-09-25",
+        "nationality": "Italian",
+        "maritalStatus": "Divorced"
+      }
+    },
+    {
+      "name": "Ivy Taylor",
+      "phone": "555-444-5555",
+      "email": "ivy.taylor@example.com",
+      "address": {
+        "houseNumber": "666 Birch Rd",
+        "city": "Meadowville",
+        "zipCode": "68024",
+        "country": "Japan"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1991-04-12",
+        "nationality": "Japanese",
+        "maritalStatus": "Single"
+      }
+    },
+    {
+      "name": "Jack Anderson",
+      "phone": "555-666-7777",
+      "email": "jack.anderson@example.com",
+      "address": {
+        "houseNumber": "777 Pine Ct",
+        "city": "Desertville",
+        "zipCode": "48602",
+        "country": "China"
+      },
+      "personalDetails": {
+        "dateOfBirth": "1987-12-08",
+        "nationality": "Chinese",
+        "maritalStatus": "Married"
+      }
+    }
+  ]
+}
