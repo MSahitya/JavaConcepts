@@ -2,6 +2,7 @@ package org.example.streamAPIS;
 
 import org.example.dtos.Employee;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -49,4 +50,12 @@ public class EmployeeStreamOps {
     }
 
 
+    public void sortEmployeesbyName(List<Employee> employeesList) {
+       System.out.println("Employees Sorted -------------");
+        List<Employee> sortList=employeesList.stream().sorted().toList();
+        //sortList.forEach(e->System.out.println(e));
+        //With comparator
+        List<Employee> sortListwithComa=employeesList.stream().sorted(Comparator.comparing(Employee::getName)).collect(Collectors.toList());
+        sortListwithComa.forEach(e->System.out.println(e));
+    }
 }

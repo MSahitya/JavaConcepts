@@ -46,7 +46,9 @@ import java.util.Map;
                 //1.Get an Employee whose name is 'Wilson'
                 EmployeeStreamOps ops = new EmployeeStreamOps();
                 String name = "Wilson";
-                ops.getEmployeewithName(name, employeesList);
+                //ops.getEmployeewithName(name, employeesList);
+
+                ops.sortEmployeesbyName(employeesList);
 
 
             } catch (IOException e) {
