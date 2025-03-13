@@ -28,3 +28,4 @@ One such scenario is when dealing with large, frequently changing data structure
 
 10. Explain the potential pitfalls of relying on immutability for security purposes, such as preventing object tampering or injection attacks.
 
+11.

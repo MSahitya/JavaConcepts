@@ -1,0 +1,24 @@
+
+
+What are the general scnerios for all the collection items?
+i. addition, deletion, updation,creation
+ii. Sorting
+iii. Searching
+iv. Custom objects handlling
+v. too much data processing
+vi. sending data over internet
+vii. Explain the internal implementation of ArrayList. How does it dynamically resize, and what are the performance implications of this resizing?
+viii. Compare and contrast the performance of ArrayList and LinkedList for various operations (add, remove, get, iterate). When would you choose one over the other, and why?"
+ix. Discuss the time complexity of ArrayList.contains() and ArrayList.indexOf(). How could you optimize these operations for large lists?
+x. How does the ArrayList handle concurrent modifications? What are the potential issues, and how can they be mitigated?
+xi. Write a method that efficiently removes duplicate elements from an ArrayList while preserving the original order. Discuss the time and space complexity of your solution."
+Explain the concept of ArrayList.subList(). What are the potential pitfalls of using it, and how can they be avoided?
+How would you create a thread-safe version of an ArrayList? Discuss different approaches and their trade-offs.
+Given an ArrayList of custom objects, how would you implement a custom sorting algorithm that is more efficient than Collections.sort() for specific scenarios?
+How does the garbage collector handle the elements inside an ArrayList? What are potential memory leaks related to ArrayLists?
+Explain the benefits of using generics with ArrayList. How does it improve type safety and code readability?
+Discuss the concept of type erasure in Java generics. How does it affect the runtime behavior of ArrayList?
+How can you create an ArrayList that can hold elements of different types while maintaining some level of type safety?
+Imagine you have a large dataset that needs to be processed in real-time. How would you use ArrayList in conjunction with other data structures and algorithms to efficiently handle this data?
+You are given a very large ArrayList, and you need to find the K most frequent elements. How would you approach this problem?
+In a system that receives a constant stream of data, how would you use ArrayList to maintain a sliding window of the last N elements and perform calculations on it?
