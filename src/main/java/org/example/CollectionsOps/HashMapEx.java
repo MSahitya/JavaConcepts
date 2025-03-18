@@ -27,6 +27,8 @@ public class HashMapEx {
         for (Map.Entry<Integer, Department> entry : map.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
             map.put(11,new Department(11,"IT0","Sahitya"));
+            //Since map is Concurrent Hashmap we don't get any issues or ConcurrentMoodificationException
+
         }
 
 
