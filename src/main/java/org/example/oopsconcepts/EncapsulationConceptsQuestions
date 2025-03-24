@@ -1,0 +1,41 @@
+**Core Concepts & Design Principles:**
+
+1.  **"Explain encapsulation in detail, focusing on its benefits in large-scale, enterprise-level Java applications.
+    How does it contribute to maintainability and reduce coupling in such systems?"**
+2.  **"Discuss the trade-offs between strict encapsulation (making all fields private) and more relaxed approaches.
+     When would you choose one over the other, and why?"** (This explores the ability to make nuanced design decisions.)
+3.  **"How does encapsulation relate to the Single Responsibility Principle (SRP) and the Open/Closed Principle (OCP)?
+      Provide examples of how violating encapsulation can lead to violations of these principles."**
+      (This connects encapsulation to broader design principles.)
+4.  **"Describe scenarios where using immutable objects, as a form of encapsulation, is particularly beneficial.
+     How do you design and implement immutable classes in Java, ensuring thread safety?"**
+      (This tests knowledge of advanced encapsulation techniques.)
+5.  **"How do you handle data validation and business logic within an encapsulated object?
+ Discuss strategies for error handling and reporting without breaking encapsulation."**
+ (This looks at practical implementation challenges.)
+
+**Advanced Topics & Real-World Scenarios:**
+
+6.  **"In a microservices architecture, how does encapsulation play a role in defining service boundaries and ensuring data
+integrity across services?"** (This explores encapsulation in distributed systems.)
+7.  **"Explain how encapsulation is used in the Java Collections Framework. Give examples of how the design of `ArrayList` or
+`HashMap` demonstrates encapsulation principles."** (This tests knowledge of core Java APIs.)
+8.  **"How do you use encapsulation to protect sensitive data, such as passwords or API keys, within a Java application?
+Discuss techniques like using final fields, encryption, and secure storage."** (This focuses on security considerations.)
+9.  **"Imagine you are designing a complex data model for a financial application. How would you use encapsulation to
+ enforce business rules and prevent invalid data states?"** (This tests the ability to apply encapsulation in a complex,
+  domain-specific scenario.)
+10. **"How do you handle the serialization and deserialization of encapsulated objects, especially when dealing with
+versioning and backward compatibility?"** (This explores potential challenges with object persistence.)
+11. **"Discuss the use of the `record` keyword introduced in Java 14 and beyond. How does it relate to encapsulation,
+ and what are its advantages and limitations?"** (This tests knowledge of modern Java features.)
+12. **"How would you utilize the module system introduced in Java 9, along with encapsulation, to enforce stronger
+boundaries and control access to internal APIs within a large application?"** (This looks at encapsulation in the context of modularity.)
+13. **"How does reflection potentially break encapsulation, and what are the best practices to mitigate the risks associated
+with it?"** (This tests knowledge of a potential pitfall.)
+14. **"In multi-threaded environments, how does proper encapsulation help prevent race conditions and ensure thread safety?"**
+(Focus on the practical side of thread safety, and how encapsulation helps.)
+15. **"Describe a time when you had to refactor a legacy Java application to improve its encapsulation. What challenges did you
+face, and how did you overcome them?"** (This tests practical experience and problem-solving skills.)
+
+
