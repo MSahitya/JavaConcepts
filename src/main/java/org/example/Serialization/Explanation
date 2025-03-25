@@ -1,0 +1,49 @@
+1. what is the need to persist data or transfer objects between different environments ?
+a. Data Persistence: if you are building shopping cart feature, the cart's contents need to ve saved even if the user closes the app.
+Recovery after power outages or crashes.
+b. Interoperability: In distributed systems, different components might be running on separate machines or written in different programming
+languages. Serialization allows objects to be converted into a common format for communication, enabling seamless integration.
+c. Data Sharing: When multiple applications or processes need to share data, such as a web service and its client, serialization
+ enables easy exchange of objects in a format like JSON, XML, or binary.
+d. Network Communication: In scenarios like sending user input from a mobile app to a server or receiving data updates from
+a remote service, serialized data can be transferred across networks.
+
+e. Caching: To improve performance, serialized objects can be stored temporarily in cache systems (e.g., Redis).
+This avoids repeated computation or data retrieval, speeding up applications.
+f. Object Reconstruction: When dealing with large or complex systems, serialized data can help transfer the exact state of an object to
+another environment, facilitating processes like debugging, cloning, or migrating between systems.
+g. Backup and REstoration:
+Persistent data enables creating backups of application state or user data, which can be restored in case of data loss or
+migration to a new platform.
+h. Cloud Computing Storage:  Many cloud-based services require applications to serialize and store data, ensuring seamless usage across devices,
+platforms, or geographical locations.
+
+
+2. What is Serialization?
+  in java it is the process of converting an object's state into a byte stream, allowing it to be saved to file, sent across network, or stored
+  in database.
+  Later this byte stream can be desirialized for creating the original object.
+
+3. For object to be serialized it must implement Serializable interface(marker Interface), which is part of java I/O  package.
+4. Marker interface doesn't contain any methods , signals the JVM that class can be serialized.
+
+5. What is serialVersionUID? Why is it important? What happens if you don't define it?
+Defining  explicitly in your class helps maintain backward compatibility. It allows you to control the compatibility between
+ different versions of a class.
+ If you don't explicitly declare a , the JVM generates one automatically based on various aspects of the class (e.g., fields, methods, etc.).
+ This auto-generated ID can change if you make any modifications to the class, such as adding or removing fields. As a result, deserialization
+ will fail with an  when a class is modified and the serialized object is incompatible with it.
+ It's a good idea to define  manually to avoid unexpected compatibility issues.
+
+ 6. Can static variables be serialized? Why or why not?
+ Static variables are associated with the class itself, not with any specific instance of the class.
+ During serialization, the state of the object is written to a byte stream, but static variables represent shared data across all instances of a class.
+  They are not part of the instance-specific state.
+
+ 7. how to store static data then?
+ Save static variables explicitly using custom logic (e.g., writing them to a file manually).
+     (or)
+ Serialize the class itself, or store the static data in a separate object that is serialized.
+
+ 8.
+
