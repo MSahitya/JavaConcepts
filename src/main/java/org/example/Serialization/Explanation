@@ -41,9 +41,13 @@ Defining  explicitly in your class helps maintain backward compatibility. It all
   They are not part of the instance-specific state.
 
  7. how to store static data then?
- Save static variables explicitly using custom logic (e.g., writing them to a file manually).
+ Save static variables explicitly using custom logic (e.g., writing them to a file manually).(this is easy)
      (or)
- Serialize the class itself, or store the static data in a separate object that is serialized.
+ Serialize the class itself, or store the static data in a separate object that is serialized.(this is confusing)
 
- 8.
-
+ 8.What happens if a class has a member variable that is not Serializable? How can you handle this?
+ If a class has a member variable that is not , it will cause a  when an attempt is made to serialize the object.
+  This happens because all member variables of a class must either be serializable themselves, or marked in a way that excludes them
+  from the serialization process.
+ In Summary, marking the field transient , using custom serialization logic, or wrapping it in a serializable class are effective
+ strategies to handle non-serializable member variables
