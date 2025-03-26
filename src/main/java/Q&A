@@ -1,0 +1,12 @@
+1. what is openJDK?
+OpenJDK provides the foundational code for Java, and various organizations then build and distribute their own versions of the JDK based on that code
+including Oracle, Amazon, and others, provide their own distributions of OpenJDK, sometimes with added features or support
+
+2. How oracle gets money through open JDK?
+  support and commercial licensing
+  Need more clarity on this?
+
+3. what are Java LTS versions?
+  Java 8, java 11, java 17, java 21, java 25
+
+4.
